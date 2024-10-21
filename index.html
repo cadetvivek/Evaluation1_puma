@@ -1,76 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Puma</title>
     <style>
-        body{
-            padding: 0;
-            margin: 0;
-        }
-        .header{
-            justify-content: center;
-            text-align: center;
-            margin: 0;
-            width: 100%;
-            font-size: large;
-            font-weight: 800;
-            height: 50px;
-            background-color: aliceblue;
-           
-        }
-        .navbar{
-           display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: black;
-        }
-        .navbar img{
-           width: 50px;
-           cursor: pointer;
-
-        }
-        .navMid li{
-            list-style: none;
-            
-        }
-        .navMid a{
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1rem;
-           
-        }
-    </style>
-</head>
-<body>
- <div class="container">
-  <div class="header">
-    <p>EXTRA 5% DISCOUNT AND FREE SHIPPING ON ALL ONLINE PAYMENTS.</p>
-
-  </div>
-  <div class="navbar">
-      <div class="logo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXzBcWO9bs36jSt5fEt3PO9-S4MEi0FDGVA&s" alt="">
-      </div>
-      <div class="navMid">
-        <li><a href="#">New</a></li>
-        <li><a href="#">Woman</a></li>
-        <li><a href="#">Man</a></li>
-        <li><a href="#">Kids</a></li>
-        <li><a href="#">Motorsport</a></li>
-        <li><a href="#">FENTY & PUMA</a></li>
-        <li><a href="#">Colaborations</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">sale</a></li>
-        <li><a href="#">Bulk Savings</a></li>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
         
-      </div>
-  </div>
-  <div class="headerPop">
+      }
+      .header {
+        justify-content: center;
 
-  </div>
- </div>   
-</body>
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        font-size: large;
+        font-weight: 800;
+        height: 50px;
+        background-color: aliceblue;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        padding: 15px 30px;
+        justify-content: space-between;
+      }
+      .navbar img {
+        width: 60px;
+        cursor: pointer;
+        gap: 20px;
+      }
+      .navMid{
+        display: flex;
+      }
+      .navMid li {
+        list-style: none;
+      }
+      .navMid a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+      .left {
+        color:white;
+        display: flex;
+        
+      }
+      .left i{
+        padding: 5px 10px;
+        justify-content: space-between;
+      }
+      .headerPop{
+        text-align: center;
+        height: 40px;
+        color: white;
+        background-color: rgb(32, 32, 120);
+      }
+      .product-row{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+      }
+      .product{
+        flex: 1;
+        text-align: center;
+      }
+      .product-image{
+        width: 100%;
+        height: 150px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 10px;
+      }
+      .product-name{
+        font-size: 14px;
+        color:black;
+        font-weight: bold;
+      }
+      .product-price{
+        font-weight: bold;
+        margin: 5px  0;
+      }
+      .product-button{
+       color: white;
+       background-color: #000;
+       cursor: pointer;
+       border-radius: 5px;
+       margin-top: 0;
+        margin: 5px  0;
+      }
+      .heading h1,p{
+        text-align: center;
+      }
+      .contaienr2{
+        text-align: center;
+        
+      }
+      .items{
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+      }
+      .item{
+        width: 300px;
+      }
+      .item img{
+        width: 100%;
+        height: auto;
+      }
+      .oneItem img{
+        justify-content: center;
+       height: 300px;
+        width: 100%;
+      }
+      .newbutton{
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>EXTRA 5% DISCOUNT AND FREE SHIPPING ON ALL ONLINE PAYMENTS.</p>
+      </div>
+      <div class="navbar">
+          <div class="logo">
+              <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXzBcWO9bs36jSt5fEt3PO9-S4MEi0FDGVA&s"
+            alt=""
+          />
+         </div>
+        <ul class="navMid">
+          <li><a href="#">New</a></li>
+          <li><a href="#">Woman</a></li>
+          <li><a href="#">Man</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Motorsport</a></li>
+          <li><a href="#">FENTY & PUMA</a></li>
+          <li><a href="#">Colaborations</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">sale</a></li>
+          <li><a href="#">Bulk Savings</a></li>
+        </ul>
+        <div class="left">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-store"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+     </div>
+      <div class="headerPop">
+        EXTRA15% OFF ON ORDERS ABOVE 3999*
+        <br>
+        Auto-applied at checkout| *Exclusions apply
+
+      </div>
+    </div>
+
+   <div class="product-row">
+    <div class="product">
+        <div class="product-image" style="background-image: url('https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/395104/02/sv01/fnd/IND/fmt/png/PUMA-Club-5v5-SD-Unisex-Sneakers');"></div>
+        <p  class="product-name">Shose</p>
+        <p class="product-price">$23</p>
+    </div>
+    <div class="product">
+        <div class="product-image" style="background-image: url('https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/395104/02/sv01/fnd/IND/fmt/png/PUMA-Club-5v5-SD-Unisex-Sneakers');"></div>
+        <p  class="product-name">Shose</p>
+        <p class="product-price">$23</p>
+    </div>
+    <div class="product">
+        <div class="product-image" style="background-image: url('https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/395104/02/sv01/fnd/IND/fmt/png/PUMA-Club-5v5-SD-Unisex-Sneakers');"></div>
+        <p  class="product-name">Shose</p>
+        <p class="product-price">$23</p>
+    </div>
+    <div class="product">
+        <div class="product-image" style="background-image: url('https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/395104/02/sv01/fnd/IND/fmt/png/PUMA-Club-5v5-SD-Unisex-Sneakers');"></div>
+        <p  class="product-name">Shose</p>
+        <p class="product-price">$23</p>
+    </div>
+   </div>
+   <div class="heading">
+    <h1>STYLE YOUR PLAERMOS</h1>
+    <P>Mixit , match it, own it</P>
+   </div>
+
+   <div class="product-row">
+    <div class="product">
+        <div class="product-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbXRo0SfSx8AZ4efdovcAlksxgBkJ4VDx2VQ&s');"></div>
+        <p  class="product-name">Shose</p>
+        <button class="product-button">SHOP NOW</button>
+    </div>
+    <div class="product">
+        <div class="product-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbXRo0SfSx8AZ4efdovcAlksxgBkJ4VDx2VQ&s');"></div>
+        <p  class="product-name">Shose</p>
+        <button class="product-button">SHOP NOW</button>
+    </div>
+    <div class="product">
+        <div class="product-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbXRo0SfSx8AZ4efdovcAlksxgBkJ4VDx2VQ&s');"></div>
+        <p  class="product-name">Shose</p>
+        <button class="product-button">SHOP NOW</button>
+    </div>
+    <div class="product">
+        <div class="product-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbXRo0SfSx8AZ4efdovcAlksxgBkJ4VDx2VQ&s');"></div>
+        <p  class="product-name">Shose</p>
+        <button class="product-button">SHOP NOW</button>
+    </div> 
+    </div>
+
+    <!-- /////////////////////////////////// -->
+     <div class="contaienr2">
+        <h1>STYLE YOUR PLAERMOS</h1>
+        <P>Mix it,match it, onw it</P>
+        <div class="items">
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsM7s6NkmkczWG50pr82MWN588QwKvJO-e1A&s" alt="">
+                <h3>STATEMENT JERSEYS</h3>
+                <button class="product-button">SHOP NOW</button>
+
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZWcxQal6ldF-psQkZ99tlkPA2CGcg-3Q2fA&s" alt="">
+                <h3>BAGE ON - THE - GO</h3>
+                <button class="product-button">SHOP NOW</button>
+
+            </div>
+
+        </div>
+     </div>
+     <div class="oneItem">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-Bt3DKIFzKIvjTMZTR5vlJJa-_9y5LIBXA&s" alt="">
+        
+     </div>
+     <div class="newbutton">
+        <h3>CLASSIC</h3>
+        <button class="product-button">SHOP NOW</button>
+     </div>
+     <div class="product-row">
+        <div class="product">
+            <div class="product-image" style="background-image: url('https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/395104/02/sv01/fnd/IND/fmt/png/PUMA-Club-5v5-SD-Unisex-Sneakers');"></div>
+            <p  class="product-name">Shose</p>
+            <p class="product-price">$23</p>
+        </div>
+        <div class="product">
+            <div class="product-image" style="background-image: url('https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/395104/02/sv01/fnd/IND/fmt/png/PUMA-Club-5v5-SD-Unisex-Sneakers');"></div>
+            <p  class="product-name">Shose</p>
+            <p class="product-price">$23</p>
+        </div>
+        <div class="product">
+            <div class="product-image" style="background-image: url('https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/395104/02/sv01/fnd/IND/fmt/png/PUMA-Club-5v5-SD-Unisex-Sneakers');"></div>
+            <p  class="product-name">Shose</p>
+            <p class="product-price">$23</p>
+        </div>
+        <div class="product">
+            <div class="product-image" style="background-image: url('https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/395104/02/sv01/fnd/IND/fmt/png/PUMA-Club-5v5-SD-Unisex-Sneakers');"></div>
+            <p  class="product-name">Shose</p>
+            <p class="product-price">$23</p>
+        </div>
+       </div>
+       <div class="heading">
+        <h1>STYLE YOUR PLAERMOS</h1>
+        <P>Mixit , match it, own it</P>
+       </div>
+       <div class="product-row">
+        <div class="product">
+            <div class="product-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbXRo0SfSx8AZ4efdovcAlksxgBkJ4VDx2VQ&s');"></div>
+            <p  class="product-name">Shose</p>
+            <button class="product-button">SHOP NOW</button>
+        </div>
+        <div class="product">
+            <div class="product-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbXRo0SfSx8AZ4efdovcAlksxgBkJ4VDx2VQ&s');"></div>
+            <p  class="product-name">Shose</p>
+            <button class="product-button">SHOP NOW</button>
+        </div>
+        <div class="product">
+            <div class="product-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbXRo0SfSx8AZ4efdovcAlksxgBkJ4VDx2VQ&s');"></div>
+            <p  class="product-name">Shose</p>
+            <button class="product-button">SHOP NOW</button>
+        </div>
+        <div class="product">
+            <div class="product-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbXRo0SfSx8AZ4efdovcAlksxgBkJ4VDx2VQ&s');"></div>
+            <p  class="product-name">Shose</p>
+            <button class="product-button">SHOP NOW</button>
+        </div> 
+        </div>
+      
+       
+        <div class="items">
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsM7s6NkmkczWG50pr82MWN588QwKvJO-e1A&s" alt="">
+                <h3>STATEMENT JERSEYS</h3>
+                <button class="product-button">SHOP NOW</button>
+
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZWcxQal6ldF-psQkZ99tlkPA2CGcg-3Q2fA&s" alt="">
+                <h3>BAGE ON - THE - GO</h3>
+                <button class="product-button">SHOP NOW</button>
+
+            </div>
+
+        </div>
+  </body>
 </html>
